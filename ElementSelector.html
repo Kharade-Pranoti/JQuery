@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Element Selector</title>
+    <script src="./script/jquery.js"></script>
+    <script>
+// To prevent an jQuery code from running before the document is finished loading(is ready).
+        $(document).ready(function(){
+// when button is clicked what action to be performed
+            $("button").click(function(){
+// hides the element with all <p> tags
+                $("p").hide();
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>Demo of the Element Selector</h1>
+    <h3>The below p tag will get hidden when you will click on a button</h3>
+    <p>My name is abcd</p>
+    <p>How are you??</p>
+    <button>Click me</button>
+</body>
+</html>
